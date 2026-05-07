@@ -1,81 +1,124 @@
-# 👋 Hi, I’m Joe Cornell  
-**Cybersecurity Analyst | Detection Engineering | Blue Team Operations**
+# Defensive Security Playbook
 
-I’m passionate about building and defending modern enterprise networks through threat detection, adversary simulation, and continuous learning.  
-I currently work as a **Security Analyst**, where I design SIEM detections, automate response workflows, and perform threat investigation and validation.
+A collection of detection engineering content, security labs, threat hunting queries, and hands-on defensive security research focused on modern enterprise environments.
 
-This repository serves as my personal cybersecurity portfolio and working knowledge base, including detection engineering research, lab environments, and certification writeups.
-
----
-
-## 🔎 Detections & Threat Hunting
-
-Organized by platform and MITRE ATT&CK tactic:
-
-- **CrowdStrike LogScale (CQL)** → `detections/crowdstrike-logscale-cql/`
-- **Splunk (SPL)** → `detections/splunk-spl/`
-- **Microsoft Sentinel (KQL)** → `detections/sentinel-kql/`
-
-Focus areas:
-- behavioral analytics
-- anomaly detection
-- credential abuse
-- lateral movement
-- LOLBins and persistence techniques
+This repository contains:
+- SIEM detections and threat hunting queries
+- Detection engineering research
+- Security lab documentation
+- Active Directory and cloud security exercises
+- Wazuh and endpoint monitoring labs
+- Offensive security writeups from a defensive perspective
 
 ---
 
-## 🧩 Interests
-- Detection Engineering & SIEM Analytics (Wazuh, LogScale, Splunk)
-- Threat Hunting & Incident Response
-- Adversary Simulation / BAS
-- Blue Team Tooling and Security Automation
-- Penetration Testing
-- Writing about Cybersecurity on [Medium](https://medium.com)
+# Repository Structure
+
+```text
+detections/
+├── crowdstrike-logscale-cql/
+├── sentinel-kql/
+└── splunk-spl/
+
+labs/
+├── cloud/
+└── wazuh/
+
+writeups/
+├── oscp/
+└── pjpt/
+```
 
 ---
 
-## 🧠 Certifications
-- CompTIA Security+  
-- CompTIA CySA+  
-- Blue Team Level 1  
-- PJPT (TCM Security)  
-- Working toward PNPT (April 2026)  
-- OSCP (June 2026)
+# Detection Engineering
+
+The `detections/` directory contains threat hunting and detection engineering content for multiple SIEM and security platforms.
+
+## Platforms
+
+- CrowdStrike LogScale (LQL/CQL)
+- Microsoft Sentinel (KQL)
+- Splunk SPL
+
+## Detection Categories
+
+Examples include:
+- Failed logon anomaly detection
+- Password spray detection
+- Brute force activity
+- Rare user logons
+- Suspicious file write activity
+- Office spawning executables
+- Registry hive exports
+- Beaconing detection research
+- Browser extension monitoring
+- Scheduled task monitoring
+- Threat intelligence enrichment
 
 ---
 
-## 🧪 Labs & Environments
+# Labs
 
-| Lab | Description | Link |
-|------|------------|------|
-| **Wazuh SIEM Implementation** | VMware-based Wazuh deployment with agents across Windows/Linux systems, dashboards, custom detection rules, and alert pipelines. | `labs/wazuh/` |
-| **Active Directory Attack & Defend Lab** | Isolated AD domain for offensive techniques and defensive detections including Kerberoasting, DCSync, lateral movement, and detection mapping. | `labs/active-directory/` |
-| **Cloud Detection Lab** | Azure/AWS logging experiments and cloud-focused analytics. | `labs/cloud/` |
+The `labs/` directory contains hands-on cybersecurity lab environments and documentation.
 
----
+## Current Labs
 
-## 📰 Articles & Writeups
+### Cloud Security Lab (In progress)
+Cloud-focused security research environment for:
+- Identity monitoring
+- Cloud attack simulations
+- Logging and telemetry analysis
+- Security configuration testing
 
-Certification reviews and technical writeups:
-
-- PJPT Review — coming soon  
-- Building a SIEM Home Lab on Wazuh — coming soon  
-- Detection Engineering through MITRE ATT&CK — coming soon  
-
-See: `writeups/`
-
----
-
-## 📫 Connect
-
-📧 [joe88cornell@yahoo.com](mailto:joe88cornell@yahoo.com)  
-💼 [LinkedIn](https://linkedin.com/in/joe-cornell)
+### Wazuh SIEM Lab (Still Documenting)
+Custom Wazuh deployment used for:
+- Endpoint monitoring
+- Log ingestion
+- Detection engineering
+- Alert validation
 
 ---
 
-## ⚖️ Notes on Scope & Ethics
+# Writeups
 
-- No employer or customer data is included.
-- All queries and labs are based on public documentation, community references, and personal research.
-- Content is intended for educational and portfolio purposes.
+The `writeups/` directory contains technical notes, walkthroughs, and learning documentation related to:
+- OSCP preparation
+- PJPT preparation
+- Hack The Box style environments
+- Enumeration methodology
+- Privilege escalation research
+- Web application testing
+
+---
+
+# Goals of This Repository
+
+This repository is used to:
+- Improve detection engineering skills
+- Document hands-on security research
+- Build reusable defensive security content
+- Practice SIEM and telemetry analysis
+- Explore attacker behavior and detection opportunities
+- Develop repeatable security workflows
+
+---
+
+# Status
+
+This repository is actively maintained and continuously updated with:
+- New detections
+- Lab improvements
+- Threat hunting queries
+- Writeups and research notes
+- Detection tuning ideas
+
+Some content may be incomplete or experimental while under development.
+
+---
+
+# Disclaimer
+
+This repository is intended for educational and research purposes only.
+
+All testing is performed in authorized lab environments.
